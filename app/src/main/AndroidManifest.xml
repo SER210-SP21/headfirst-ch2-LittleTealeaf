@@ -10,7 +10,7 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.SER210Chapter2Demo">
         <activity
-                android:name=".MainActivity"
+                android:name=".CalcActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
