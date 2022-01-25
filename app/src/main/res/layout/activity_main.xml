@@ -34,7 +34,7 @@
     <Button
             android:text="@string/textAddition"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="0dp"
             android:id="@+id/buttonAddition"
             app:layout_constraintStart_toStartOf="@+id/input2"
             app:layout_constraintEnd_toStartOf="@+id/buttonSubtraction"
@@ -45,7 +45,7 @@
     <Button
             android:text="@string/textSubtraction"
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:id="@+id/buttonSubtraction"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,7 @@
 
     <Spinner
             android:layout_width="0dp"
-            android:layout_height="43dp"
+            android:layout_height="0dp"
             android:id="@+id/spinner"
             android:entries="@array/operations"
             app:layout_constraintEnd_toEndOf="@+id/input2"
