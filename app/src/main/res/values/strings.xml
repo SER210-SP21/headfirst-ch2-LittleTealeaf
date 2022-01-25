@@ -3,4 +3,8 @@
     <string name="textAddition">+</string>
     <string name="textSubtraction">-</string>
     <string name="textResult">Result</string>
+    <string-array name="operations">
+        <item>/</item>
+        <item>*</item>
+    </string-array>
 </resources>
