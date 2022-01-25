@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class CalcActivity extends AppCompatActivity {
@@ -20,9 +22,11 @@ public class CalcActivity extends AppCompatActivity {
 
         Button add = (Button) findViewById(R.id.buttonAddition);
         Button subtract = (Button) findViewById(R.id.buttonSubtraction);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
         input1 = (EditText) findViewById(R.id.input1);
         input2 = (EditText) findViewById(R.id.input2);
         res = (TextView) findViewById(R.id.result);
+
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,7 +37,12 @@ public class CalcActivity extends AppCompatActivity {
 
         subtract.setOnClickListener(v -> performOp('-'));
 
+        spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
+            }
+        });
     }
 
     private void performOp(char operation) {
