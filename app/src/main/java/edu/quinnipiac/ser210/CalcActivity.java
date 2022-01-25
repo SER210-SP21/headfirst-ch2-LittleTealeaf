@@ -37,36 +37,44 @@ public class CalcActivity extends AppCompatActivity {
 
         subtract.setOnClickListener(v -> performOp('-'));
 
-        spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                char c = spinner.getSelectedItem().toString().charAt(0);
+                performOp(c);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
         });
     }
 
     private void performOp(char operation) {
-        if(input1.getText() != null && input2.getText() != null) {
-            double num1 = Double.parseDouble(input1.getText().toString());
-            double num2 = Double.parseDouble(input2.getText().toString());
+        try {
+            if(input1.getText() != null && input2.getText() != null) {
+                double num1 = Double.parseDouble(input1.getText().toString());
+                double num2 = Double.parseDouble(input2.getText().toString());
 
-            double result = 0;
+                double result = 0;
 
-            switch(operation) {
-                case '+':
-                    result = num1 + num2;
-                    break;
-                case '-':
-                    result = num1 - num2;
-                    break;
-                case '*':
-                    result = num1 * num2;
-                    break;
-                case '/':
-                    result = num1 / num2;
-                    break;
+                switch(operation) {
+                    case '+':
+                        result = num1 + num2;
+                        break;
+                    case '-':
+                        result = num1 - num2;
+                        break;
+                    case '*':
+                        result = num1 * num2;
+                        break;
+                    case '/':
+                        result = num1 / num2;
+                        break;
+                }
+                res.setText(Double.toString(result));
             }
-            res.setText(Double.toString(result));
-        }
+        } catch(Exception ignored) {}
     }
 }
