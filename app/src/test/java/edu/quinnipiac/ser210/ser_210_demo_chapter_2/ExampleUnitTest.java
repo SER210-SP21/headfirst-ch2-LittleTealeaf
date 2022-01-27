@@ -1,4 +1,4 @@
-package edu.quinnipiac.ser210;
+package edu.quinnipiac.ser210.ser_210_demo_chapter_2;
 
 import org.junit.Test;
 

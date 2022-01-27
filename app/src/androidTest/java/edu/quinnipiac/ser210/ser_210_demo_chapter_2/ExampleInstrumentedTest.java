@@ -1,4 +1,4 @@
-package edu.quinnipiac.ser210;
+package edu.quinnipiac.ser210.ser_210_demo_chapter_2;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("edu.quinnipiac.ser210", appContext.getPackageName());
+        assertEquals("edu.quinnipiac.ser210.ser_210_demo_chapter_2", appContext.getPackageName());
     }
 }

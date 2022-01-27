@@ -4,80 +4,15 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".CalcActivity">
-
-    <EditText
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/input1"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="25dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp" />
-
-    <EditText
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/input2"
-            app:layout_constraintStart_toStartOf="@+id/input1"
-            app:layout_constraintEnd_toEndOf="@+id/input1"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintTop_toBottomOf="@+id/input1"
-            android:layout_marginTop="15dp" />
-
-    <Button
-            android:text="@string/textAddition"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/buttonAddition"
-            app:layout_constraintStart_toStartOf="@+id/input2"
-            app:layout_constraintEnd_toStartOf="@+id/buttonSubtraction"
-            android:layout_marginEnd="25dp"
-            app:layout_constraintTop_toTopOf="@+id/buttonSubtraction"
-            app:layout_constraintBottom_toBottomOf="@+id/buttonSubtraction" />
-
-    <Button
-            android:text="@string/textSubtraction"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:id="@+id/buttonSubtraction"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/input2"
-            android:layout_marginTop="25dp" />
-
-    <Spinner
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:id="@+id/spinner"
-            android:entries="@array/operations"
-            app:layout_constraintEnd_toEndOf="@+id/input2"
-            app:layout_constraintStart_toEndOf="@+id/buttonSubtraction"
-            android:layout_marginStart="25dp"
-            app:layout_constraintTop_toTopOf="@+id/buttonSubtraction"
-            app:layout_constraintBottom_toBottomOf="@+id/buttonSubtraction" />
-
-    <TextView
-            android:text="@string/textResult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/label_result"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="25dp"
-            app:layout_constraintTop_toBottomOf="@+id/buttonAddition"
-            android:layout_marginTop="25dp" />
+        tools:context=".MainActivity">
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/result"
-            app:layout_constraintStart_toEndOf="@+id/label_result"
-            android:layout_marginStart="25dp"
-            app:layout_constraintTop_toTopOf="@+id/label_result" />
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
