@@ -15,6 +15,7 @@ public class FindBeerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
     public void onClickFindBeer(View view) {
         TextView brands = (TextView) findViewById(R.id.brands);
         Spinner beerColor = (Spinner) findViewById(R.id.color);
